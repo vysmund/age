@@ -8,13 +8,18 @@ var civs = ["Aztecas", "Bereberes", "Birmanos", "Bizantinos", "Celtas", "Chinos"
 "Jemeres", "Magiares", "Malayos", "Malíes", "Mayas", "Mongoles", "Persas", "Portugueses", "Sarracenos",
 "Teutones", "Turcos", "Vietnamitas", "Vikingos"];
 
+function getRandomCiv(){
+    return civs[Math.floor(Math.random() * civs.length)];
+}
+ 
 </script>
 
-Hola
+<h1>Civilización Random para Vos</h1>
 
-<button type="button" onclick="document.getElementById('demo').innerHTML = civs[Math.floor(Math.random() * civs.length)]">DAME UNA CIV!</button>
+
+<button type="button" onclick="document.getElementById('random_civ').innerHTML = getRandomCiv()">DAME UNA CIV!</button>
  
-<p id="demo"></p>
+<p id="random_civ"></p>
  
 </body>
 </html> 
