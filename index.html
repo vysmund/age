@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
 <body>
+ 
+var civs = ["Aztecas", "Bereberes", "Birmanos", "Bizantinos", "Celtas", "Chinos", "Coreanos", "Eslavos",
+ "Españoles", "Etíopes", "Francos", "Godos", "Hunos", "Incas", "Indios", "Ingleses", "Italianos", "Japoneses",
+ "Jemeres", "Magiares", "Malayos", "Malíes", "Mayas", "Mongoles", "Persas", "Portugueses", "Sarracenos",
+ "Teutones", "Turcos", "Vietnamitas", "Vikingos"];
 
 Hola
 
-<button type="button" onclick="document.getElementById('demo').innerHTML = 'GRACIAS por hacer click.'">DAME UNA CIV!</button>
+<button type="button" onclick="document.getElementById('demo').innerHTML = civs[Math.floor(Math.random() * civs.length)]">DAME UNA CIV!</button>
  
 <p id="demo"></p>
  
